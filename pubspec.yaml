@@ -1,0 +1,32 @@
+name: login_demo
+description: A new Flutter project.
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter_modular:
+  flutter_login: ^1.0.14
+  flutter:
+    sdk: flutter
+  api_demo:
+    path: ../api_demo
+
+  cupertino_icons: ^0.1.2
+
+dependency_overrides:
+  flushbar: 1.9.1
+  
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+flutter:
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+   - assets/logo.png
