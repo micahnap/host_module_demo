@@ -3,16 +3,19 @@ import 'package:flutter_modular/flutter_modular.dart';
 import 'profileSelect_screen.dart';
 import 'package:api_demo/main.dart';
 
-void main() => runApp(ModularApp(module: AppModule()));
+void main() => runApp(ModularApp(module: HomeModule()));
 
-class AppModule extends MainModule {
+class HomeModule extends MainModule {
   @override
-  List<Bind> get binds => [];
+  List<Bind> get binds => [
+    Bind((i) => DriverMixin()),
+  ];
 
   @override
   List<Router> get routers => [
-    Router("/login/:channelId", child: (_, args) => LoginScreen(channelId: args.params['channelId'])),
+    Router("/login", module: LoginModule()),
   ];
+
   @override
   Widget get bootstrap => ProfileWidget();
 }
