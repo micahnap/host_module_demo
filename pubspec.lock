@@ -4,9 +4,11 @@ packages:
   api_demo:
     dependency: "direct main"
     description:
-      path: "../api_demo"
-      relative: true
-    source: path
+      path: "."
+      ref: HEAD
+      resolved-ref: "40126414acabb6d6c5988edd733c6fe8bf4fed32"
+      url: "git@github.com:micahnap/login_submodule_demo.git"
+    source: git
     version: "1.0.0+1"
   archive:
     dependency: transitive

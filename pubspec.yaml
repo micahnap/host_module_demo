@@ -12,7 +12,8 @@ dependencies:
   flutter:
     sdk: flutter
   api_demo:
-    path: ../api_demo
+    git:
+      url: git@github.com:micahnap/login_submodule_demo.git
 
   cupertino_icons: ^0.1.2
 

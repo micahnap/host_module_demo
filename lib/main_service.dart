@@ -1,8 +1,7 @@
-import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 
 abstract class MainService {
-  Future<void> loadLoginModule(String channelId);
+  void getBindings() => [];
 }
 
 class ProfileSelectionService extends MainService {

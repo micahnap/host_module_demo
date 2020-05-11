@@ -2,14 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:api_demo/main.dart';
 
-class DriverMixin with Thing {
-  @override
-  List<String> get labels => ['This', 'is', 'Driver'];
-  @override
-  void doAthing(String thing) {
-    print('driver thing');
-  }
-}
 
 class ProfileWidget extends StatelessWidget {
   void _onPassengerPressed() {
